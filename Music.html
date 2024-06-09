@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MusicSite</title>
+    <link rel="stylesheet" href="Music.css">
+</head>
+<body>
+       <div class="navbar">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">SONGS</a></li>
+                <li><a href="#">VIDEOS</a></li>
+                <li><a href="#">ABOUT</a></li>
+            
+            </ul>
+            
+        </div>
+        <div class="Yeah">
+            <main class="container">
+                <div>
+                   <img src="cool.jpg"  id="cool" alt="Sai">
+                </div>
+                <div>
+                    <img src="bushe1.png" id="cool" alt="sai">
+                </div>
+              
+               </main>  
+       
+               <section id="icon">
+                <h4>Sai x Tyk x Da Bliz - Ifintu ndepitamo</h4>
+                   <audio id="song1" src="Sai x Tyk x Da Bliz == Ifintu ndepitamo (Prod by Sai).mp3" controls></audio><h4>Sai x Strong Vision ft Boy K - Give me love</h4>
+                   <audio id="song2" src="Sai x Strong Vision ft Boy K == Give me love (prod by Sai).mp3" controls>
+                   </audio>
+                   <h4>Sai x Easy Boy ft Fresh K - Jane</h4>
+                   <audio id="song3" src="Sai x Easy Boy ft Fresh K == Jane (prod by sai)(1).mp3" controls></audio>
+               
+               </section>
+        </div>
+            
+           </div>
+               
+         <script>
+            document.addEventListener('play', function(e){
+             var audios = document.getElementsByTagName('audio');
+             for(var i = 0, len = audios.length; i < len;i++){
+             if(audios[i] != e.target){
+                audios[i].pause();
+                 }
+                }
+            }, true);
+       </script>
+
+</body>
+</html>
